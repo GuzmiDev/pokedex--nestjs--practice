@@ -16,7 +16,7 @@ export class SeedController {
   async executeSeed() {
     const pokeApi = [];
     const data = await this.http.get<PokeResponse>(
-      'https://pokeapi.co/api/v2/pokemon?limit=5',
+      'https://pokeapi.co/api/v2/pokemon?limit=386',
     );
 
     data.results.forEach(({ name, url }) => {
